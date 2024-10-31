@@ -86,7 +86,7 @@ public class GameBoard {
     //Score updating 
     //Updating the Game Grid
     public void updatePlayerLocation(int playerId, String key) {
-
+    System.out.println("playerId=" + playerId + ", key=" + key);
         Player player = players[playerId - 1];
         player.move(Integer.parseInt(key));
 
